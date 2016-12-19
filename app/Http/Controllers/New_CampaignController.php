@@ -24,6 +24,6 @@ class New_CampaignController extends Controller
      */
     public function index()
     {
-        return view('adminlte::new_campaigns');
+        return view('new_campaigns');
     }
 }

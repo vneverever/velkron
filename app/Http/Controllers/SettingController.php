@@ -24,6 +24,6 @@ class SettingController extends Controller
      */
     public function index()
     {
-        return view('adminlte::settings');
+        return view('settings');
     }
 }

@@ -24,6 +24,6 @@ class CampaignController extends Controller
      */
     public function index()
     {
-        return view('adminlte::campaigns');
+        return view('campaigns');
     }
 }

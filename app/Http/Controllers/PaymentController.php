@@ -24,6 +24,6 @@ class PaymentController extends Controller
      */
     public function index()
     {
-        return view('adminlte::payments');
+        return view('payments');
     }
 }
