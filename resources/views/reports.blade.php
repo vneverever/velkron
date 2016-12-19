@@ -4,6 +4,10 @@
     {{ trans('adminlte_lang::message.reports') }}
 @endsection
 
+@section('contentheader_title')
+    {{ trans('adminlte_lang::message.reports') }}
+@endsection
+
 @section('main-content')
     <div class='row'>
         <div class='col-md-6'>

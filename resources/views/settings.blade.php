@@ -4,6 +4,10 @@
     {{ trans('adminlte_lang::message.settings') }}
 @endsection
 
+@section('contentheader_title')
+    {{ trans('adminlte_lang::message.settings') }}
+@endsection
+
 @section('main-content')
 
 @endsection
