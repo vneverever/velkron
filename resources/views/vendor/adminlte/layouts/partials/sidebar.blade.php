@@ -22,12 +22,12 @@
         <ul class="sidebar-menu">
             <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="{{ url('home') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
-            <li><a href="{{ url('reports') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.reports') }}</span></a></li>
-            <li><a href="{{ url('campaigns') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.campaigns') }}</span></a></li>
-            <li><a href="{{ url('new_campaigns') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.new_campaigns') }}</span></a></li>
-            <li><a href="{{ url('payments') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.payments') }}</span></a></li>
-            <li><a href="{{ url('settings') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.settings') }}</span></a></li>
+            <li class="active"><a href="{{ url('home') }}"><i class='fa fa-home'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
+            <li><a href="{{ url('reports') }}"><i class='fa fa-bar-chart-o'></i> <span>{{ trans('adminlte_lang::message.reports') }}</span></a></li>
+            <li><a href="{{ url('campaigns') }}"><i class='fa fa-bars'></i> <span>{{ trans('adminlte_lang::message.campaigns') }}</span></a></li>
+            <li><a href="{{ url('new_campaigns') }}"><i class='fa fa-caret-square-o-right'></i> <span>{{ trans('adminlte_lang::message.new_campaigns') }}</span></a></li>
+            <li><a href="{{ url('payments') }}"><i class='fa fa-dollar'></i> <span>{{ trans('adminlte_lang::message.payments') }}</span></a></li>
+            <li><a href="{{ url('settings') }}"><i class='fa fa-cog'></i> <span>{{ trans('adminlte_lang::message.settings') }}</span></a></li>
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
