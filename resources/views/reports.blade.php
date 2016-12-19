@@ -1,4 +1,4 @@
-@extends(app)
+@extends(adminlte:layouts.app)
 
 @section('main-content')
     <div class='row'>
