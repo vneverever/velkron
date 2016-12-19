@@ -176,6 +176,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
         /*
@@ -183,7 +184,7 @@ return [
          *
          * See: https://github.com/acacha/llum
          */
-        Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         #llum_providers
