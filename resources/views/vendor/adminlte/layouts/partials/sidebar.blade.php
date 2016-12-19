@@ -23,14 +23,11 @@
             <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
-            <li><a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.anotherlink') }}</span></a></li>
-            <li class="treeview">
-                <a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.multilevel') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
-                <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
-                </ul>
-            </li>
+            <li><a href="{{ url('reports') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.reports') }}</span></a></li>
+            <li><a href="{{ url('campaigns') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.campaigns') }}</span></a></li>
+            <li><a href="{{ url('new_campaigns') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.new_campaigns') }}</span></a></li>
+            <li><a href="{{ url('payments') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.payments') }}</span></a></li>
+            <li><a href="{{ url('settings') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.settings') }}</span></a></li>
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
