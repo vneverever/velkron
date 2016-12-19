@@ -35,7 +35,7 @@ class ReportController extends Controller {
                 'color' => 'success'
             ]
         ];
-        return view('test')->with($data);
+        return view('reports')->with($data);
     }
 
 }
