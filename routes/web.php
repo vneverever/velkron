@@ -18,5 +18,5 @@ Route::get('/', function () {
 Route::get('reports', 'ReportController@index');
 Route::get('campaigns', 'CampaignController@index');
 Route::get('new_campaigns', 'New_CampaignController@index');
-Route::get('reports', 'PaymentController@index');
-Route::get('reports', 'SettingController@index');
+Route::get('payments', 'PaymentController@index');
+Route::get('settings', 'SettingController@index');
