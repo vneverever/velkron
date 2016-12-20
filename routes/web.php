@@ -11,12 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['domain' => 'velkron.club'], function(){
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    Route::get('reports', 'ReportController@index');
+    Route::get('campaigns', 'CampaignController@index');
+    Route::get('new_campaigns', 'New_CampaignController@index');
+    Route::get('payments', 'PaymentController@index');
+    Route::get('settings', 'SettingController@index');
 });
 
-Route::get('reports', 'ReportController@index');
-Route::get('campaigns', 'CampaignController@index');
-Route::get('new_campaigns', 'New_CampaignController@index');
-Route::get('payments', 'PaymentController@index');
-Route::get('settings', 'SettingController@index');
+
+Route::any('{all}', 'SitesPublicController@index')->where('all', '.*');
+
