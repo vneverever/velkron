@@ -13,7 +13,7 @@ class DomainTableSeeder extends Seeder
     {
         //
         DB::table('domains')->insert([
-            'domain_name' => 'test',
+            'domain_name' => 'test.velkron.club',
             'user_id' => 1,
         ]);
     }
