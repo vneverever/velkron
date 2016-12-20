@@ -25,3 +25,7 @@ Route::group(['domain' => 'velkron.club'], function(){
 
 Route::any(['domain' => 'test.velkron.club'], 'SitesPublicController@index')->where('all', '.*');
 
+
+Route::get(['domain' => 'test.velkron.club'], function() {
+    Route::get('/', 'SitesPublicController@index')->where('all','.*');
+});
