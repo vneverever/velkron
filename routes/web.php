@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['domain' => 'velkron.club'], function(){
+
     Route::get('/', function () {
         return view('welcome');
     });
@@ -20,12 +20,3 @@ Route::group(['domain' => 'velkron.club'], function(){
     Route::get('new_campaigns', 'New_CampaignController@index');
     Route::get('payments', 'PaymentController@index');
     Route::get('settings', 'SettingController@index');
-});
-
-
-//Route::any('{any}', 'SitesPublicController@index')->where('all', '.*');
-
-
-Route::group(['domain' => 'test.velkron.club'], function() {
-    Route::get('/', 'SitesPublicController@index')->where('all','.*');
-});
