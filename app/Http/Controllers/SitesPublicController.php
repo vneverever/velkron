@@ -6,7 +6,7 @@
  * Time: 16:33
  */
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 
 use App\Http\Middleware\VerifiedDomain;
 
