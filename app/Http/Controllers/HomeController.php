@@ -34,10 +34,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
+        $visitorsTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
-        $stocksTable->addDateColumn('Day of Week')
-            ->addNumberColumn('Projected');
+        $visitorsTable->addDateColumn('Day of Week')
+            ->addNumberColumn('Visitors');
 
         // Random Data For Example
         for ($a = 1; $a < 8; $a++)
@@ -46,10 +46,27 @@ class HomeController extends Controller
                 "2016-8-$a", rand(800,1000)
             ];
 
-            $stocksTable->addRow($rowData);
+            $visitorsTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Stocks',$stocksTable);
+        \Lava::LineChart('Visitors',$visitorsTable);
+
+        $earningsTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
+
+        $earningsTable->addDateColumn('Day of Week')
+            ->addNumberColumn('Earnings');
+
+        // Random Data For Example
+        for ($a = 1; $a < 8; $a++)
+        {
+            $rowData = [
+                "2016-8-$a", rand(0,100)
+            ];
+
+            $earningsTable->addRow($rowData);
+        }
+
+        \Lava::LineChart('Earnings',$earningsTable);
 
         return view('home');
     }

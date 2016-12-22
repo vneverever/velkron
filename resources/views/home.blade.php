@@ -67,10 +67,23 @@
             <div class="col-md-12">
                 <div class="box box-success">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Visitors Report</h3>
+                        <h3 class="box-title">Weekly Visitors Report</h3>
                     </div>
-                    <div class="box-body" id="stocks-div">
-                        {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
+                    <div class="box-body" id="visitors-div">
+                        {!! \Lava::render('LineChart', 'Visitors', 'visitors-div') !!}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Weekly Earnings Report</h3>
+                    </div>
+                    <div class="box-body" id="earnings-div">
+                        {!! \Lava::render('LineChart', 'Earnings', 'earnings-div') !!}
                     </div>
                 </div>
             </div>
