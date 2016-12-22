@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-md-6">
+        <div class="col-lg-12">
             <div id="stocks-div" >
             {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
             </div>
