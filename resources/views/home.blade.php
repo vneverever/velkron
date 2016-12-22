@@ -64,7 +64,7 @@
         </div>
         <div class="col-lg-12 col-md-6">
             <div class="stocks-div" >
-            <? echo Lava::render('LineChart', 'Stocks', 'stocks-div'); ?>
+            {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
             </div>
         </div>
 	</div>

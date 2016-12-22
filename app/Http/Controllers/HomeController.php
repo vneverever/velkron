@@ -50,7 +50,7 @@ class HomeController extends Controller
             $stocksTable->addRow($rowData);
         }
 
-        Lava::LineChart('Stocks',$stocksTable);
+        \Lava::LineChart('Stocks',$stocksTable);
 
         return view('home');
     }
