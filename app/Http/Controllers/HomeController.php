@@ -9,7 +9,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-use Khill\Lavacharts\Laravel\LavachartsFacade as Lava;
+//use Khill\Lavacharts\Laravel\LavachartsFacade as Lava;
 
 /**
  * Class HomeController
@@ -34,7 +34,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $stocksTable = Lava::DataTable();  // Lava::DataTable() if using Laravel
+        $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
         $stocksTable->addDateColumn('Day of Month')
             ->addNumberColumn('Projected')
@@ -50,7 +50,7 @@ class HomeController extends Controller
             $stocksTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Stocks',$stocksTable);
+        Lava::LineChart('Stocks',$stocksTable);
 
         return view('home');
     }

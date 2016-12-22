@@ -190,7 +190,7 @@ return [
         #llum_providers
 
         //Charts
-        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
+        'Khill\Lavacharts\Laravel\LavachartsServiceProvider',
 
     ],
 
@@ -247,7 +247,7 @@ return [
          */
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-	    'Lava' =>  Khill\Lavacharts\Laravel\LavachartsFacade::class,
+	    'Lava' =>  'Khill\Lavacharts\Laravel\LavachartsFacade',
 
         #llum_aliases
 
