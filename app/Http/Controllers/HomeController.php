@@ -40,7 +40,7 @@ class HomeController extends Controller
             ->addNumberColumn('Projected');
 
         // Random Data For Example
-        for ($a = 1; $a < 7; $a++)
+        for ($a = 1; $a < 8; $a++)
         {
             $rowData = [
                 "2016-8-$a", rand(800,1000)
