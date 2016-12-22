@@ -37,7 +37,7 @@ class HomeController extends Controller
         $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
         $stocksTable->addDateColumn('Day of Week')
-            ->addNumberColumn('Projected')
+            ->addNumberColumn('Projected');
 
         // Random Data For Example
         for ($a = 1; $a < 7; $a++)
