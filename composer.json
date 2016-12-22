@@ -10,7 +10,7 @@
         "acacha/admin-lte-template-laravel": "dev-master",
         "barryvdh/laravel-ide-helper": "^2.2",
         "barryvdh/laravel-debugbar": "^2.3",
-        "khill/lavacharts": "3.1.x-dev"
+        "khill/lavacharts": "3.0.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

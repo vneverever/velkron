@@ -7,7 +7,6 @@
 
 namespace App\Http\Controllers;
 
-use Khill\Lavacharts\Lavacharts as Lava;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 

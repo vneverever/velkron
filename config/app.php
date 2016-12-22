@@ -247,7 +247,7 @@ return [
          */
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-	'Lava' =>  Khill\Lavacharts\Laravel\LavachartsFacade::class,
+	    'Lava' =>  Khill\Lavacharts\Laravel\LavachartsFacade::class,
 
         #llum_aliases
 
