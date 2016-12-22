@@ -34,7 +34,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $stocksTable = Lava::DataTable();  // Lava::DataTable() if using Laravel
+        $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
         $stocksTable->addDateColumn('Day of Month')
             ->addNumberColumn('Projected')
@@ -47,7 +47,7 @@ class HomeController extends Controller
             ]);
         }
 
-        $chart = Lava::LineChart($stocksTable);
+        $chart = \Lava::LineChart($stocksTable);
 
         return view('home');
     }
