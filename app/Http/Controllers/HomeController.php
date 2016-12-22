@@ -40,10 +40,13 @@ class HomeController extends Controller
             ->addNumberColumn('Visitors');
 
         // Random Data For Example
+        $sumVisitor = 0;
         for ($a = 1; $a < 8; $a++)
         {
+            $val = rand(500,1000);
+            $sumVisitor += $val;
             $rowData = [
-                "2016-8-$a", rand(800,1000)
+                "2016-8-$a", val
             ];
 
             $visitorsTable->addRow($rowData);
@@ -59,10 +62,13 @@ class HomeController extends Controller
             ->addNumberColumn('Earnings');
 
         // Random Data For Example
+        $sumEarnings = 0;
         for ($a = 1; $a < 8; $a++)
         {
+            $val = rand(0,100);
+            $sumEarnings += $val;
             $rowData = [
-                "2016-8-$a", rand(0,100)
+                "2016-8-$a", $val
             ];
 
             $earningsTable->addRow($rowData);
