@@ -65,7 +65,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div id="stocks-div">
+                <div class="box box-success" id="stocks-div">
                 {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
                 </div>
             </div>
