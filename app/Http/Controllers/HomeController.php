@@ -46,7 +46,7 @@ class HomeController extends Controller
             $val = rand(500,1000);
             $sumVisitor += $val;
             $rowData = [
-                "2016-8-$a", val
+                "2016-8-$a", $val
             ];
 
             $visitorsTable->addRow($rowData);
