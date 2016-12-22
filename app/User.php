@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'userStr'
+        'name', 'email', 'password'
     ];
 
     /**
@@ -26,4 +26,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function domainName(){
+        return $this->hasOne('App/Domain');
+    }
+
+    public function accountBalance(){
+        return $this->hasOne('App/Balance');
+    }
+
+    public function accountPaid(){
+        return $this->hasOne('App/Paid');
+    }
+
+    public function clicksMonth(){
+        return $this->hasOne('App/Domain');
+    }
 }

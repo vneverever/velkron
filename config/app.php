@@ -189,6 +189,9 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         #llum_providers
 
+        //Charts
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider,
+
     ],
 
     /*
