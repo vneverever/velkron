@@ -34,20 +34,23 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
+        $stocksTable = Lava::DataTable();  // Lava::DataTable() if using Laravel
 
         $stocksTable->addDateColumn('Day of Month')
             ->addNumberColumn('Projected')
             ->addNumberColumn('Official');
 
         // Random Data For Example
-        for ($a = 1; $a < 30; $a++) {
-            $stocksTable->addRow([
-                '2015-10-' . $a, rand(800,1000), rand(800,1000)
-            ]);
+        for ($a = 1; $a < 30; $a++)
+        {
+            $rowData = [
+                "2014-8-$a", rand(800,1000), rand(800,1000)
+            ];
+
+            $stocksTable->addRow($rowData);
         }
 
-        //$chart = \Lava::LineChart($stocksTable);
+        \Lava::LineChart('Stocks',$stocksTable);
 
         return view('home');
     }

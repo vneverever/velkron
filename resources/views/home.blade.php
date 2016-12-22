@@ -66,7 +66,5 @@
             <div id="stocks-chart"></div>
         </div>
 	</div>
-    <?php
-        echo Lava::render('LineChart', 'MyStocks', 'stocks-chart');
-    ?>
+    @linechart('Stocks', 'stocks-div', true)
 @endsection
