@@ -9,7 +9,6 @@
 @endsection
 
 @section('main-content')
-	<div class="container-fluid spark-screen">
         <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
             <!-- small box -->
@@ -69,6 +68,5 @@
             {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
             </div>
         </div>
-	</div>
 
 @endsection
