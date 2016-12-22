@@ -36,15 +36,14 @@ class HomeController extends Controller
     {
         $stocksTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
-        $stocksTable->addDateColumn('Day of Month')
+        $stocksTable->addDateColumn('Day of Week')
             ->addNumberColumn('Projected')
-            ->addNumberColumn('Official');
 
         // Random Data For Example
-        for ($a = 1; $a < 30; $a++)
+        for ($a = 1; $a < 7; $a++)
         {
             $rowData = [
-                "2014-8-$a", rand(800,1000), rand(800,1000)
+                "2016-8-$a", rand(800,1000)
             ];
 
             $stocksTable->addRow($rowData);
