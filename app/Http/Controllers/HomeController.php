@@ -47,7 +47,7 @@ class HomeController extends Controller
             ]);
         }
 
-        $chart = \Lava::LineChart($stocksTable);
+        //$chart = \Lava::LineChart($stocksTable);
 
         return view('home');
     }
