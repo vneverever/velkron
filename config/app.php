@@ -190,7 +190,7 @@ return [
         #llum_providers
 
         //Charts
-        Khill\Lavacharts\Laravel\LavachartsServiceProvider,
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class
 
     ],
 
