@@ -49,7 +49,7 @@ class HomeController extends Controller
             $visitorsTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Visitors',$visitorsTable, [
+        \Lava::AreaChart('Visitors',$visitorsTable, [
             'legend' => ['position' => 'in']
         ]);
 
@@ -68,7 +68,7 @@ class HomeController extends Controller
             $earningsTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Earnings',$earningsTable,[
+        \Lava::AreaChart('Earnings',$earningsTable,[
             'legend' => ['position' => 'in']
         ]);
 
