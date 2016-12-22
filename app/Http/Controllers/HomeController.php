@@ -49,7 +49,9 @@ class HomeController extends Controller
             $visitorsTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Visitors',$visitorsTable);
+        \Lava::LineChart('Visitors',$visitorsTable, [
+            'legend' => ['position' => 'in']
+        ]);
 
         $earningsTable = \Lava::DataTable();  // Lava::DataTable() if using Laravel
 
@@ -66,7 +68,9 @@ class HomeController extends Controller
             $earningsTable->addRow($rowData);
         }
 
-        \Lava::LineChart('Earnings',$earningsTable);
+        \Lava::LineChart('Earnings',$earningsTable,[
+            'legend' => ['position' => 'in']
+        ]);
 
         return view('home');
     }
