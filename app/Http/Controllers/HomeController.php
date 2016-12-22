@@ -9,7 +9,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
-//use Khill\Lavacharts\Laravel\LavachartsFacade as Lava;
+use Khill\Lavacharts\Laravel\LavachartsFacade as Lava;
 
 /**
  * Class HomeController
