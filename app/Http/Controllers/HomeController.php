@@ -78,7 +78,10 @@ class HomeController extends Controller
             'legend' => ['position' => 'in']
         ]);
 
-        $data = array($sumEarnings, $sumVisitor);
+        $data = array(
+            'sumEarnings' => $sumEarnings,
+            'sumVisitor' => $sumVisitor
+        );
 
         return view('home')->with('data', $data);
     }
