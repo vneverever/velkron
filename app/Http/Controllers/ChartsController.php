@@ -1,26 +1,19 @@
 <?php
-
-/*
- * Taken from
- * https://github.com/laravel/framework/blob/5.3/src/Illuminate/Auth/Console/stubs/make/controllers/HomeController.stub
+/**
+ * Created by PhpStorm.
+ * User: dell
+ * Date: 22.12.2016
+ * Time: 14:05
  */
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-/**
- * Class HomeController
- * @package App\Http\Controllers
- */
-class HomeController extends Controller
+class ChartsController
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -31,7 +24,7 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function chart1()
     {
         $stocksTable = Lava::DataTable();  // Lava::DataTable() if using Laravel
 
@@ -48,6 +41,5 @@ class HomeController extends Controller
 
         $chart = Lava::LineChart($stocksTable);
 
-        return view('home');
     }
 }

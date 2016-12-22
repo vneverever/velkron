@@ -20,3 +20,5 @@
     Route::get('new_campaigns', 'New_CampaignController@index');
     Route::get('payments', 'PaymentController@index');
     Route::get('settings', 'SettingController@index');
+
+    Route::get('chart1', 'ChartsController@chart1');
