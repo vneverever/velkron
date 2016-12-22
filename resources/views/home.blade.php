@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-6">
-            @linechart('Stocks', 'stocks-div', true)
+            @linechart('Stocks', 'stocks-div', true);
         </div>
 	</div>
 
