@@ -78,6 +78,8 @@ class HomeController extends Controller
             'legend' => ['position' => 'in']
         ]);
 
-        return view('home');
+        $data = array($sumEarnings, $sumVisitor);
+
+        return view('home')->with('data', $data);
     }
 }
