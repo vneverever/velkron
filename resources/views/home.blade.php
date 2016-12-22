@@ -69,7 +69,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Visitors Report</h3>
                     </div>
-                    <div id="stocks-div">
+                    <div class="box-body no-padding" id="stocks-div">
                         {!! \Lava::render('LineChart', 'Stocks', 'stocks-div') !!}
                     </div>
                 </div>
