@@ -80,7 +80,7 @@
             <div class="col-md-12">
                 <div class="box box-success">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Weekly Earnings Report  -  {{{$data['sumEarnings'] or 0}}}$</h3>
+                        <h3 class="box-title">Weekly Earnings Report  -  {{{$data['sumVisitor'] or 0}}}$</h3>
                     </div>
                     <div class="box-body" id="earnings-div">
                         {!! \Lava::render('AreaChart', 'Earnings', 'earnings-div') !!}
